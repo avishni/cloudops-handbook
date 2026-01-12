@@ -1,5 +1,7 @@
 # CloudOps Handbook
 
+> ⚠️ **Status: Under Construction** - This repository is currently being built. We have only a few guides available at the moment. If you have expertise in any cloud operations or DevOps topic, **we invite you to contribute your guides!** After community contributions are made, this handbook will be continuously updated and expanded. All contributed content must be original work and placed under copyright. Please do not upload content that belongs to other creators or vendors.
+
 A comprehensive collection of guides, cheatsheets, and curated resources for cloud infrastructure, DevOps tools, and platform engineering. This handbook serves as a practical reference for engineers working with modern cloud-native technologies.
 
 ## 📚 What's Inside
