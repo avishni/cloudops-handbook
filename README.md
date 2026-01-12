@@ -6,86 +6,92 @@ A comprehensive collection of guides, cheatsheets, and curated resources for clo
 
 ## 📚 What's Inside
 
-### 🎓 Guides
-In-depth tutorials and step-by-step documentation covering core infrastructure and DevOps technologies. Each guide includes practical examples, best practices, and visual diagrams to help you understand and implement solutions effectively.
-
-### ⚡ Cheatsheets
-Quick reference cards with commonly used commands, syntax, and workflows. Perfect for daily operations and when you need a fast reminder.
-
-### 📚 External Resources
-Curated collection of PDFs, ebooks, and reference materials from the community and official sources.
+Each topic folder contains:
+- **Guides** - In-depth tutorials with step-by-step instructions and best practices
+- **Cheatsheets** - Quick reference cards for common commands and workflows
+- **Prompts** - Suggested GenAI prompts for ChatGPT, Gemini, Claude, etc. organized by use case
 
 ## 🗂️ Repository Structure
 
 ```
 cloudops-handbook/
-├── guides/              # Detailed tutorials and documentation
-├── cheatsheets/         # Quick reference guides
-├── external-resources/  # PDFs, ebooks, and curated materials
-└── templates/           # Templates for creating new content
+├── kubernetes/          # Container orchestration
+├── prometheus/          # Metrics and monitoring
+├── grafana/             # Visualization and dashboards
+├── github/              # Git and version control
+├── github-actions/      # CI/CD automation
+├── docker/              # Containerization
+├── terraform/           # Infrastructure as Code
+├── aws/                 # Amazon Web Services
+├── azure/               # Microsoft Azure
+├── gcp/                 # Google Cloud Platform
+├── templates/           # Templates for creating new content
+└── assets/              # Shared diagrams, images, and icons
 ```
 
 ## 📖 Topics Covered
 
-### Container Orchestration
-- **[Kubernetes](./guides/kubernetes/)** - Container orchestration, workloads, networking, and security
-- **[Docker](./guides/docker/)** - Containerization basics and advanced patterns
-
-### Monitoring & Observability
-- **[Prometheus](./guides/prometheus/)** - Metrics collection, alerting, and monitoring
-- **[Grafana](./guides/monitoring-observability/grafana/)** - Visualization and dashboards
-
-### CI/CD & Automation
-- **[GitHub Actions](./guides/github-actions/)** - Workflow automation and CI/CD pipelines
-- **[GitHub](./guides/github/)** - Git workflows and collaboration
-
-### Infrastructure as Code
-- **[Terraform](./guides/terraform/)** - Infrastructure provisioning and management
-
-### Cloud Providers
-- **[AWS](./guides/cloud-providers/aws/)** - Amazon Web Services guides
-- **[Azure](./guides/cloud-providers/azure/)** - Microsoft Azure guides
-- **[GCP](./guides/cloud-providers/gcp/)** - Google Cloud Platform guides
+- **[Kubernetes](./kubernetes/)** - Container orchestration, workloads, networking, and security
+- **[Prometheus](./prometheus/)** - Metrics collection, alerting, and monitoring
+- **[Grafana](./grafana/)** - Visualization, dashboards, and alerting
+- **[GitHub](./github/)** - Git workflows and version control
+- **[GitHub Actions](./github-actions/)** - Workflow automation and CI/CD pipelines
+- **[Docker](./docker/)** - Containerization basics and patterns
+- **[Terraform](./terraform/)** - Infrastructure provisioning and management
+- **[AWS](./aws/)** - Amazon Web Services guides
+- **[Azure](./azure/)** - Microsoft Azure guides
+- **[GCP](./gcp/)** - Google Cloud Platform guides
 
 ## 🚀 Quick Start
 
-### Browse by Technology
-Navigate to any topic folder in the [`/guides`](./guides/) directory to find detailed documentation.
+### Browse a Topic
+Navigate to any topic folder to find guides, cheatsheets, and GenAI prompts for that technology.
+
+### Use GenAI Prompts
+Each topic includes a `prompts.md` file with curated prompts for ChatGPT, Gemini, Claude, and other GenAI tools. Use these as starting points for learning or problem-solving.
 
 ### Find Quick References
-Check the [`/cheatsheets`](./cheatsheets/) folder for quick command references and syntax guides.
-
-### Explore External Resources
-Visit [`/external-resources`](./external-resources/) for curated PDFs and ebooks.
-
-## 🔍 How to Use This Handbook
-
-**For Beginners:** Start with the "getting-started" sections in each technology guide. Work through the basics before moving to advanced topics.
-
-**For Practitioners:** Use the cheatsheets for daily operations and dive into specific guides when implementing new features or solving problems.
-
-**For Teams:** Fork this repository and customize it with your organization's specific configurations, standards, and practices.
+Look for `cheatsheet.md` or `cheatsheet.pdf` in each topic folder for quick command references.
 
 ## 🤝 Contributing
 
-Contributions are welcome! Whether it's fixing typos, adding new guides, or suggesting improvements:
+Contributions are welcome! We're actively building this handbook and would love your expertise:
+
+1. **Choose a topic** - Pick an existing topic or suggest a new one
+2. **Create a guide** - Write a markdown file with your expertise
+3. **Add a cheatsheet** - Create a quick reference (MD or PDF)
+4. **Suggest prompts** - Add useful GenAI prompts to the topic's `prompts.md`
+
+### Contributing Guidelines
 
 1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/new-guide`)
-3. Commit your changes (`git commit -m 'Add new Kubernetes networking guide'`)
-4. Push to the branch (`git push origin feature/new-guide`)
+2. Create a feature branch (`git checkout -b feature/add-kubernetes-cni-guide`)
+3. Commit your changes (`git commit -m 'Add Kubernetes CNI deep dive guide'`)
+4. Push to the branch (`git push origin feature/add-kubernetes-cni-guide`)
 5. Open a Pull Request
+
+**Important:**
+- ✅ All contributed content must be your original work
+- ✅ Content is subject to the project's copyright and license
+- ❌ Do not upload content from other creators, vendors, or proprietary sources
+- ❌ Always respect intellectual property rights
 
 See [CONTRIBUTING.md](./CONTRIBUTING.md) for detailed guidelines.
 
-## 📝 Content Guidelines
+## 📝 File Structure for Each Topic
 
-When creating new content:
-- Use the templates in [`/templates`](./templates/) for consistency
-- Include practical examples and code snippets
-- Add diagrams and screenshots where helpful
-- Keep guides focused and well-organized
-- Update the relevant README.md indexes
+Each topic folder follows this optional structure:
+
+```
+topic-name/
+├── prompts.md              # GenAI prompts organized by use case
+├── cheatsheet.md           # Quick reference (markdown)
+├── cheatsheet.pdf          # Quick reference (PDF) - optional
+├── getting-started.md      # Introductory guide
+├── [specific-guide].md     # Additional topic-specific guides
+├── images/                 # Diagrams and screenshots
+└── [other-resources]       # PDFs, examples, etc.
+```
 
 ## 📄 License
 
@@ -95,16 +101,39 @@ This project is licensed under the MIT License - see the [LICENSE](./LICENSE) fi
 
 This handbook is built on knowledge from the DevOps community, official documentation, and hands-on experience. Special thanks to all contributors and the open-source community.
 
-## 🔗 Additional Resources
+## 🎯 Using This with GenAI Tools
 
-- [Kubernetes Official Documentation](https://kubernetes.io/docs/)
+Each topic includes a `prompts.md` file with curated prompts. Here's how to use them effectively:
+
+1. **Select a Use Case** - Find a scenario matching your needs in the topic's `prompts.md`
+2. **Copy the Prompt** - Use the provided prompt as a starting point
+3. **Customize** - Adapt it to your specific environment and requirements
+4. **Get Better Results** - Follow the tips provided for each topic
+
+### Supported GenAI Tools
+- ChatGPT (OpenAI)
+- Gemini (Google)
+- Claude (Anthropic)
+- Other LLM-based AI assistants
+
+## 📚 Using Templates
+
+Create new content using our templates:
+- [guide-template.md](./templates/guide-template.md) - For writing guides
+- [cheatsheet-template.md](./templates/cheatsheet-template.md) - For quick references
+- [prompts-template.md](./templates/prompts-template.md) - For GenAI prompts
+- [troubleshooting-template.md](./templates/troubleshooting-template.md) - For troubleshooting guides
+
+## 🔗 Official Documentation
+
+- [Kubernetes Official Docs](https://kubernetes.io/docs/)
 - [Prometheus Documentation](https://prometheus.io/docs/)
 - [Docker Documentation](https://docs.docker.com/)
-- [GitHub Actions Documentation](https://docs.github.com/en/actions)
+- [GitHub Documentation](https://docs.github.com/)
 - [Terraform Documentation](https://www.terraform.io/docs)
 
 ---
 
-**Made with ❤️ for the DevOps community**
+**Made with ❤️ for the DevOps and Cloud Operations community**
 
 *Last updated: January 2026*
